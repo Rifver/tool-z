@@ -12,63 +12,63 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      title: 'Promotion Video',
+      title: 'Product Promotion',
       category: 'Promotional',
-      role: 'Director & Editor',
-      year: '2024',
-      description: 'A compelling brand story video for PT. Adanu Adhinata Semesta showcasing company values and vision.',
+      role: 'Videographer & Editor',
+      year: '2023',
+      description: 'A comprehensive product promotion showcasing product values through dynamic storytelling and professional cinematography.',
       thumbnail: 'https://i.postimg.cc/CMP6PbKG/Screenshot-2025-07-31-030328.png',
-      tags: ['Premiere Pro', 'Corporate', 'Branding']
+      tags: ['Premiere Pro', 'Capcut', 'Color Grading']
     },
     {
       id: 2,
       title: 'Advertising Motion Graphic',
       category: 'Animation',
-      role: 'Videographer & Editor',
+      role: 'Graphic Designer & Animator',
       year: '2024',
-      description: 'High-energy product launch video with dynamic transitions and motion graphics.',
-      thumbnail: 'https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?w=500&q=80',
+      description: 'High-energy product video with dynamic transitions and motion graphics.',
+      thumbnail: 'https://i.postimg.cc/Y9hdLfG2/Screenshot-2025-07-30-211636.png',
       tags: ['After Effects', 'Motion Graphics', 'Product']
     },
     {
       id: 3,
-      title: 'Executive Interview Series',
+      title: 'Product Testimonials',
       category: 'Documentary/Interview',
-      role: 'Director of Photography',
+      role: 'Videographer & Editor',
       year: '2023',
-      description: 'Professional interview setup with proper lighting and multi-camera angles.',
-      thumbnail: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?w=500&q=80',
-      tags: ['Interview', 'Corporate', 'Multi-cam']
+      description: 'Professional interview setup with multiple camera angles and thoughtful lighting design for executive content.',
+      thumbnail: 'https://i.postimg.cc/y8QT0pqq/Screenshot-2025-07-31-050749.png',
+      tags: ['Interview', 'Audio Design', 'Multi-cam']
     },
     {
       id: 4,
       title: 'Educational Content Series',
       category: 'Educational',
-      role: 'Producer & Editor',
-      year: '2024',
+      role: 'Director & Editor',
+      year: '2023',
       description: 'Engaging educational videos with animated explanations and clear visual storytelling.',
-      thumbnail: 'https://images.unsplash.com/photo-1503428593586-e225b39bddfe?w=500&q=80',
-      tags: ['Education', 'Animation', 'Storytelling']
+      thumbnail: 'https://i.postimg.cc/wMMqRBDY/Screenshot-2025-07-31-050704.png',
+      tags: ['Education', 'Content Strategy', 'Storytelling']
     },
     {
       id: 5,
       title: 'Green Screen Productions',
       category: 'Green Screen',
-      role: 'Technical Director',
+      role: 'Technical Director & Editor',
       year: '2023',
       description: 'Various green screen projects with seamless background integration and color matching.',
-      thumbnail: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=500&q=80',
+      thumbnail: 'https://i.postimg.cc/Y0BcMq8x/Screenshot-2025-07-31-051237.png',
       tags: ['Green Screen', 'VFX', 'Compositing']
     },
     {
       id: 6,
-      title: 'Comedy Short Film',
+      title: 'Comedy Sketch',
       category: 'Comedy',
-      role: 'Director & Editor',
-      year: '2023',
-      description: 'Light-hearted comedy short with creative editing and timing for maximum comedic effect.',
-      thumbnail: 'https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?w=500&q=80',
-      tags: ['Comedy', 'Short Film', 'Creative Edit']
+      role: 'Videographer & Editor',
+      year: '2024',
+      description: 'Engaging comedy content, featuring creative scriptwriting and dynamic editing techniques.',
+      thumbnail: 'https://i.postimg.cc/qvRFf34T/Screenshot-2025-07-31-050851.png',
+      tags: ['Comedy', 'Comedy Timing', 'Creative Edit']
     }
   ];
 
@@ -122,13 +122,13 @@ const Portfolio = () => {
                   <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                     <div className="flex space-x-3">
                       <Button size="sm" variant="secondary" asChild>
-                        <a href={project.id === 1 ? "https://drive.google.com/file/d/1v_Oa9mZaUgPWi-SNqUrfeL0WHcvWTRdK/view?usp=sharing" : project.id === 2 ? "https://drive.google.com/file/d/1RFepNuXkBcpjUxdWzgeQQnzkpLgqso5h/view?usp=sharing" : "#"} target="_blank" rel="noopener noreferrer">
+                        <a href={project.id === 1 ? "https://drive.google.com/file/d/1zaBcCZ2TowwfJylotFHMyOZ719NDFsdn/view?usp=sharing" : project.id === 2 ? "https://drive.google.com/file/d/1RFepNuXkBcpjUxdWzgeQQnzkpLgqso5h/view?usp=sharing" : project.id === 3 ? "https://drive.google.com/file/d/1gr_LdZuMa9zcK7Vzut8vjO38jq6FkcnP/view?usp=sharing" : project.id === 4 ? "https://drive.google.com/file/d/1Gq7uChS7nSRIwQTFvhuHAD3sdDIZD1sW/view?usp=sharing" : project.id === 5 ? "https://drive.google.com/file/d/1vbA7o92qEXiM7m_1X9TKYeRBLRuLRlB5/view?usp=sharing" : project.id === 6 ? "https://drive.google.com/file/d/1wdNTp9D_KxjjZtRuOeYADZJ7ZvaXzVhL/view?usp=sharing" : "#"} target="_blank" rel="noopener noreferrer">
                           <Play className="w-4 h-4 mr-2" />
                           Play
                         </a>
                       </Button>
                       <Button size="sm" variant="outline" asChild>
-                        <a href={project.id === 1 ? "https://drive.google.com/drive/folders/16AwSrFkyuCnYOLUkGFBcleuDIuc9RLY4?usp=drive_link" : project.id === 2 ? "https://drive.google.com/drive/folders/178aVLPm5qZJ-mpxfp4dCe_dq72Y-xY8_?usp=drive_link" : "#"} target="_blank" rel="noopener noreferrer">
+                        <a href={project.id === 1 ? "https://drive.google.com/drive/folders/16AwSrFkyuCnYOLUkGFBcleuDIuc9RLY4?usp=drive_link" : project.id === 2 ? "https://drive.google.com/drive/folders/178aVLPm5qZJ-mpxfp4dCe_dq72Y-xY8_?usp=drive_link" : project.id === 3 ? "https://drive.google.com/drive/folders/15PaatHHil10xu8aHub9G30NlWup91p2L?usp=drive_link" : project.id === 4 ? "https://drive.google.com/drive/folders/1fBQhmw0jX6X6oSSCbbS6KNzmDK8NqTUb?usp=drive_link" : project.id === 5 ? "https://drive.google.com/drive/folders/1XEAYIY1pXYishOuhavr99acNmjq3IiC_?usp=drive_link" : project.id === 6 ? "https://drive.google.com/drive/folders/1_MJJq0QINIHnbf392FfNxGXOjQO3ucl_?usp=drive_link" : "#"} target="_blank" rel="noopener noreferrer">
                           <Eye className="w-4 h-4 mr-2" />
                           Details
                         </a>
@@ -173,13 +173,13 @@ const Portfolio = () => {
           <div className="text-center mt-16">
             <div className="glass-card p-8 max-w-2xl mx-auto">
               <h3 className="text-2xl font-bold mb-4">
-                Ready to Start Your <span className="portfolio-gradient bg-clip-text text-transparent">Project?</span>
+                Get in <span className="portfolio-gradient bg-clip-text text-transparent">Touch!</span>
               </h3>
               <p className="text-muted-foreground mb-6">
-                Let's collaborate to bring your vision to life with professional videography and editing services.
+                Let's collaborate to create exceptional video content that tells your story and engages your audience. Get in touch to discuss your vision and requirements.
               </p>
               <Button size="lg" className="portfolio-gradient" asChild>
-                <a href="/contact">Get In Touch</a>
+                <a href="/contact">Contact Me</a>
               </Button>
             </div>
           </div>
