@@ -179,7 +179,7 @@ const Portfolio = () => {
                 Let's collaborate to create exceptional video content that tells your story and engages your audience. Get in touch to discuss your vision and requirements.
               </p>
               <Button size="lg" className="portfolio-gradient" asChild>
-                <a href="/contact">Contact Me</a>
+                <Link to="/contact">Contact Me</Link>
               </Button>
             </div>
           </div>
