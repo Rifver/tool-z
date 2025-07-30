@@ -39,8 +39,8 @@ const Services = () => {
     description: 'Work with your team throughout the production process'
   }, {
     icon: Monitor,
-    title: 'Multiple Formats',
-    description: 'Optimized videos for different platforms and devices'
+    title: 'Event Documentation',
+    description: 'Professional coverage of corporate events and special occasions'
   }];
   return <Layout>
       <div className="pt-24 pb-12">
