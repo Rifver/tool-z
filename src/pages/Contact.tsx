@@ -6,7 +6,6 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import Layout from '@/components/Layout';
 import { useToast } from '@/hooks/use-toast';
-
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -15,71 +14,56 @@ const Contact = () => {
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const { toast } = useToast();
-
+  const {
+    toast
+  } = useToast();
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
   };
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
     // Simulate form submission
     await new Promise(resolve => setTimeout(resolve, 1000));
-
     toast({
       title: "Message sent successfully!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
+      description: "Thank you for reaching out. I'll get back to you soon."
     });
-
-    setFormData({ name: '', email: '', subject: '', message: '' });
+    setFormData({
+      name: '',
+      email: '',
+      subject: '',
+      message: ''
+    });
     setIsSubmitting(false);
   };
-
-  const contactInfo = [
-    {
-      icon: Mail,
-      label: 'Email',
-      value: 'rifatul.hastiya@gmail.com',
-      href: 'mailto:rifatul.hastiya@gmail.com'
-    },
-    {
-      icon: Instagram,
-      label: 'Instagram',
-      value: '@toool.z',
-      href: 'https://instagram.com/toool.z'
-    },
-    {
-      icon: Linkedin,
-      label: 'LinkedIn',
-      value: 'Rif\'atulmadhan Trihastiya',
-      href: 'https://linkedin.com/in/rifatulmadhan-trihastiya'
-    },
-    {
-      icon: MapPin,
-      label: 'Location',
-      value: 'Yogyakarta, Indonesia',
-      href: '#'
-    }
-  ];
-
-  const services = [
-    'Videography & Cinematography',
-    'Video Editing & Post-Production',
-    'Motion Graphics & Animation',
-    'Green Screen Productions',
-    'Corporate Event Documentation',
-    'Educational Content Creation',
-    'Social Media Video Content',
-    'Promotional & Advertisement Videos'
-  ];
-
-  return (
-    <Layout>
+  const contactInfo = [{
+    icon: Mail,
+    label: 'Email',
+    value: 'rifatul.hastiya@gmail.com',
+    href: 'mailto:rifatul.hastiya@gmail.com'
+  }, {
+    icon: Instagram,
+    label: 'Instagram',
+    value: '@toool.z',
+    href: 'https://instagram.com/toool.z'
+  }, {
+    icon: Linkedin,
+    label: 'LinkedIn',
+    value: 'Rif\'atulmadhan Trihastiya',
+    href: 'https://linkedin.com/in/rifatulmadhan-trihastiya'
+  }, {
+    icon: MapPin,
+    label: 'Location',
+    value: 'Yogyakarta, Indonesia',
+    href: '#'
+  }];
+  const services = ['Videography & Cinematography', 'Video Editing & Post-Production', 'Motion Graphics & Animation', 'Green Screen Productions', 'Corporate Event Documentation', 'Educational Content Creation', 'Social Media Video Content', 'Promotional & Advertisement Videos'];
+  return <Layout>
       <div className="pt-24 pb-12">
         <div className="container mx-auto px-4">
           {/* Header */}
@@ -100,73 +84,29 @@ const Contact = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <Label htmlFor="name">Full Name *</Label>
-                    <Input
-                      id="name"
-                      name="name"
-                      type="text"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      required
-                      className="mt-1"
-                      placeholder="Your full name"
-                    />
+                    <Input id="name" name="name" type="text" value={formData.name} onChange={handleInputChange} required className="mt-1" placeholder="Your full name" />
                   </div>
                   <div>
                     <Label htmlFor="email">Email Address *</Label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      required
-                      className="mt-1"
-                      placeholder="your.email@example.com"
-                    />
+                    <Input id="email" name="email" type="email" value={formData.email} onChange={handleInputChange} required className="mt-1" placeholder="your.email@example.com" />
                   </div>
                 </div>
                 
                 <div>
                   <Label htmlFor="subject">Subject *</Label>
-                  <Input
-                    id="subject"
-                    name="subject"
-                    type="text"
-                    value={formData.subject}
-                    onChange={handleInputChange}
-                    required
-                    className="mt-1"
-                    placeholder="What's this about?"
-                  />
+                  <Input id="subject" name="subject" type="text" value={formData.subject} onChange={handleInputChange} required className="mt-1" placeholder="What's this about?" />
                 </div>
                 
                 <div>
                   <Label htmlFor="message">Message *</Label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    required
-                    className="mt-1 min-h-[120px]"
-                    placeholder="Tell me about your project, timeline, and any specific requirements..."
-                  />
+                  <Textarea id="message" name="message" value={formData.message} onChange={handleInputChange} required className="mt-1 min-h-[120px]" placeholder="Tell me about your project, timeline, and any specific requirements..." />
                 </div>
                 
-                <Button
-                  type="submit"
-                  size="lg"
-                  disabled={isSubmitting}
-                  className="w-full portfolio-gradient"
-                >
-                  {isSubmitting ? (
-                    'Sending...'
-                  ) : (
-                    <>
+                <Button type="submit" size="lg" disabled={isSubmitting} className="w-full portfolio-gradient">
+                  {isSubmitting ? 'Sending...' : <>
                       Send Message
                       <Send className="ml-2 w-4 h-4" />
-                    </>
-                  )}
+                    </>}
                 </Button>
               </form>
             </div>
@@ -178,43 +118,30 @@ const Contact = () => {
                 <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
                 <div className="space-y-4">
                   {contactInfo.map((info, index) => {
-                    const Icon = info.icon;
-                    return (
-                      <div key={index} className="flex items-center space-x-4">
+                  const Icon = info.icon;
+                  return <div key={index} className="flex items-center space-x-4">
                         <div className="w-10 h-10 rounded-lg portfolio-gradient flex items-center justify-center">
                           <Icon className="w-5 h-5 text-white" />
                         </div>
                         <div>
                           <p className="text-sm text-muted-foreground">{info.label}</p>
-                          {info.href !== '#' ? (
-                            <a
-                              href={info.href}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-foreground hover:text-primary transition-colors"
-                            >
+                          {info.href !== '#' ? <a href={info.href} target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
                               {info.value}
-                            </a>
-                          ) : (
-                            <p className="text-foreground">{info.value}</p>
-                          )}
+                            </a> : <p className="text-foreground">{info.value}</p>}
                         </div>
-                      </div>
-                    );
-                  })}
+                      </div>;
+                })}
                 </div>
               </div>
 
               {/* Services Overview */}
               <div className="glass-card p-8">
-                <h2 className="text-2xl font-bold mb-6">Services Available</h2>
+                <h2 className="text-2xl font-bold mb-6">Skills</h2>
                 <div className="space-y-3">
-                  {services.map((service, index) => (
-                    <div key={index} className="flex items-center space-x-3">
+                  {services.map((service, index) => <div key={index} className="flex items-center space-x-3">
                       <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
                       <span className="text-muted-foreground">{service}</span>
-                    </div>
-                  ))}
+                    </div>)}
                 </div>
               </div>
 
@@ -257,8 +184,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default Contact;
