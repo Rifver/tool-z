@@ -31,8 +31,8 @@ const Services = () => {
   }];
   const addOnServices = [{
     icon: Zap,
-    title: 'Rush Delivery',
-    description: '24-48 hour turnaround for urgent projects'
+    title: 'Event Documentation',
+    description: 'Professional coverage of corporate events, conferences, and special occasions'
   }, {
     icon: Users,
     title: 'Team Collaboration',
