@@ -105,9 +105,9 @@ const Services = () => {
           <div className="text-center">
             <div className="glass-card p-8 max-w-2xl mx-auto">
               <h3 className="text-2xl font-bold mb-4">
-                Ready to Start Your <span className="portfolio-gradient bg-clip-text text-transparent">Project?</span>
+                Get in <span className="portfolio-gradient bg-clip-text text-transparent">Touch!</span>
               </h3>
-              <p className="text-muted-foreground mb-6">Let's m your video production needs and create something amazing together.</p>
+              <p className="text-muted-foreground mb-6">Let's create something amazing together.</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="portfolio-gradient" asChild>
                   <Link to="/contact">Contact Me</Link>
