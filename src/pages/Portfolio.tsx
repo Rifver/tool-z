@@ -22,8 +22,8 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      title: 'Product Launch Campaign',
-      category: 'Promotional',
+      title: 'Advertising Motion Graphic',
+      category: 'Animation',
       role: 'Videographer & Editor',
       year: '2024',
       description: 'High-energy product launch video with dynamic transitions and motion graphics.',
@@ -121,13 +121,17 @@ const Portfolio = () => {
                   />
                   <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                     <div className="flex space-x-3">
-                      <Button size="sm" variant="secondary">
-                        <Play className="w-4 h-4 mr-2" />
-                        Play
+                      <Button size="sm" variant="secondary" asChild>
+                        <a href={project.id === 2 ? "https://drive.google.com/file/d/1RFepNuXkBcpjUxdWzgeQQnzkpLgqso5h/view?usp=sharing" : "#"} target="_blank" rel="noopener noreferrer">
+                          <Play className="w-4 h-4 mr-2" />
+                          Play
+                        </a>
                       </Button>
-                      <Button size="sm" variant="outline">
-                        <Eye className="w-4 h-4 mr-2" />
-                        Details
+                      <Button size="sm" variant="outline" asChild>
+                        <a href={project.id === 2 ? "https://drive.google.com/drive/folders/178aVLPm5qZJ-mpxfp4dCe_dq72Y-xY8_?usp=drive_link" : "#"} target="_blank" rel="noopener noreferrer">
+                          <Eye className="w-4 h-4 mr-2" />
+                          Details
+                        </a>
                       </Button>
                     </div>
                   </div>
