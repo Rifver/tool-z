@@ -9,7 +9,7 @@ import profilePhoto from '@/assets/profile-photo.png';
 const Index = () => {
   const stats = [
     { icon: Award, label: 'Years Experience', value: '1+' },
-    { icon: Users, label: 'Projects Completed', value: '50+' },
+    { icon: Users, label: 'Projects Completed', value: '100+' },
     { icon: Play, label: 'Video Content', value: 'Various' },
   ];
 
@@ -95,12 +95,12 @@ const Index = () => {
               Creating <span className="portfolio-gradient bg-clip-text text-transparent">Visual Excellence</span>
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              With expertise in Adobe Premiere Pro, After Effects, and modern video production techniques, 
-              I specialize in bringing creative visions to life through professional videography and post-production services.
+              With expertise in Adobe Premiere Pro, Illustrator, Capcut and modern video production techniques, 
+              I specialize in bringing creative visions to life through professional videography and post-production.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
               <div className="glass-card p-6">
-                <h3 className="font-semibold text-lg mb-3 text-primary">Videography Services</h3>
+                <h3 className="font-semibold text-lg mb-3 text-primary">Videography</h3>
                 <p className="text-muted-foreground">
                   Professional camera operation, lighting setup, and green screen production for various content types.
                 </p>
