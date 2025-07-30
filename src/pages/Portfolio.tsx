@@ -12,12 +12,12 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      title: 'Corporate Brand Video',
+      title: 'Promotion Video',
       category: 'Promotional',
       role: 'Director & Editor',
       year: '2024',
       description: 'A compelling brand story video for PT. Adanu Adhinata Semesta showcasing company values and vision.',
-      thumbnail: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=500&q=80',
+      thumbnail: 'https://i.postimg.cc/CMP6PbKG/Screenshot-2025-07-31-030328.png',
       tags: ['Premiere Pro', 'Corporate', 'Branding']
     },
     {
@@ -122,13 +122,13 @@ const Portfolio = () => {
                   <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                     <div className="flex space-x-3">
                       <Button size="sm" variant="secondary" asChild>
-                        <a href={project.id === 2 ? "https://drive.google.com/file/d/1RFepNuXkBcpjUxdWzgeQQnzkpLgqso5h/view?usp=sharing" : "#"} target="_blank" rel="noopener noreferrer">
+                        <a href={project.id === 1 ? "https://drive.google.com/file/d/1v_Oa9mZaUgPWi-SNqUrfeL0WHcvWTRdK/view?usp=sharing" : project.id === 2 ? "https://drive.google.com/file/d/1RFepNuXkBcpjUxdWzgeQQnzkpLgqso5h/view?usp=sharing" : "#"} target="_blank" rel="noopener noreferrer">
                           <Play className="w-4 h-4 mr-2" />
                           Play
                         </a>
                       </Button>
                       <Button size="sm" variant="outline" asChild>
-                        <a href={project.id === 2 ? "https://drive.google.com/drive/folders/178aVLPm5qZJ-mpxfp4dCe_dq72Y-xY8_?usp=drive_link" : "#"} target="_blank" rel="noopener noreferrer">
+                        <a href={project.id === 1 ? "https://drive.google.com/drive/folders/16AwSrFkyuCnYOLUkGFBcleuDIuc9RLY4?usp=drive_link" : project.id === 2 ? "https://drive.google.com/drive/folders/178aVLPm5qZJ-mpxfp4dCe_dq72Y-xY8_?usp=drive_link" : "#"} target="_blank" rel="noopener noreferrer">
                           <Eye className="w-4 h-4 mr-2" />
                           Details
                         </a>
