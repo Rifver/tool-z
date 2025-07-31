@@ -126,7 +126,7 @@ const Experience = () => {
                 <div className="text-sm text-muted-foreground mt-2 md:mt-0">
                   <div className="flex items-center">
                     <Calendar className="w-4 h-4 mr-2" />
-                    Expected 2025
+                    Graduated 2025
                   </div>
                 </div>
               </div>
