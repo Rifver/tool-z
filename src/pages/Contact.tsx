@@ -82,7 +82,7 @@ const Contact = () => {
     icon: Linkedin,
     label: 'LinkedIn',
     value: 'Rif\'atulmadhan Trihastiya',
-    href: 'https://linkedin.com/in/rifatulmadhan-trihastiya'
+    href: 'www.linkedin.com/in/rif-atulmadhan-trihastiya-25b854245'
   }, {
     icon: MapPin,
     label: 'Location',
