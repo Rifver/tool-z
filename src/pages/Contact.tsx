@@ -72,7 +72,7 @@ const Contact = () => {
     icon: Mail,
     label: 'Email',
     value: 'rifatul.hastiya@gmail.com',
-    href: 'mailto:rifatul.hastiya@gmail.com'
+    href: '#'
   }, {
     icon: Instagram,
     label: 'Instagram',
@@ -99,7 +99,7 @@ const Contact = () => {
               Get In <span className="portfolio-gradient bg-clip-text text-transparent">Touch</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Ready to bring your vision to life? Let's discuss your project and create something amazing together.
+              Ready to bring your vision to life? Let's discuss and create something amazing together.
             </p>
           </div>
 
@@ -126,7 +126,7 @@ const Contact = () => {
                 
                 <div>
                   <Label htmlFor="message">Message *</Label>
-                  <Textarea id="message" name="message" value={formData.message} onChange={handleInputChange} required className="mt-1 min-h-[120px]" placeholder="Tell me about your project, timeline, and any specific requirements..." />
+                  <Textarea id="message" name="message" value={formData.message} onChange={handleInputChange} required className="mt-1 min-h-[120px]" placeholder="Tell me about your vision and any specific requirements..." />
                 </div>
                 
                 <Button type="submit" size="lg" disabled={isSubmitting} className="w-full portfolio-gradient">
@@ -195,7 +195,7 @@ const Contact = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="outline" size="lg" asChild>
-                  <a href="mailto:rifatul.hastiya@gmail.com">
+                  <a href="https://api.whatsapp.com/send/?phone=%2B6287775886136&text&type=phone_number&app_absent=0">
                     <Mail className="mr-2 w-4 h-4" />
                     Email Directly
                   </a>
