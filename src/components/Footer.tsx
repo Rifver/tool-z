@@ -19,7 +19,7 @@ const Footer = () => {
     {
       name: 'LinkedIn',
       icon: Linkedin,
-      href: 'www.linkedin.com/in/rif-atulmadhan-trihastiya-25b854245',
+      href: 'https://www.linkedin.com/in/rif-atulmadhan-trihastiya-25b854245/',
     },
   ];
 
