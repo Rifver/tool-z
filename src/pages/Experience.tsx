@@ -131,9 +131,9 @@ const Experience = () => {
                 </div>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                Pursuing a Bachelor's degree in Informatics Engineering with a focus on game development. 
-                This technical background provides a strong foundation for understanding multimedia technologies, 
-                digital content creation, and the technical aspects of video production and editing.
+                I graduated from Ahmad Dahlan University in 2025 with a Bachelor's degree in Informatics Engineering, majoring in Game Development. 
+                Throughout my studies, I developed both technical and interpersonal skills, gaining a solid foundation in game development and related technologies. 
+                My time in university helped me grow in both hard skills, such as programming and design, as well as soft skills like communication, teamwork, and problem-solving.
               </p>
             </div>
           </div>
