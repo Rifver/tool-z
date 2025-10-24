@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Play, Eye, Calendar } from 'lucide-react';
+import { Play, Eye, Calendar, Info } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import Layout from '@/components/Layout';
@@ -89,6 +89,14 @@ const Portfolio = () => {
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               A showcase of creative video projects across various industries and formats
             </p>
+            
+            {/* Instructional Note */}
+            <div className="flex items-center justify-center gap-2 mt-6 px-4 py-3 bg-secondary/30 border border-border rounded-lg max-w-2xl mx-auto">
+              <Info className="w-4 h-4 text-primary flex-shrink-0" />
+              <p className="text-sm text-muted-foreground italic">
+                <span className="font-semibold">*Note:</span> Please press the "Details" button to see more of my projects based on the category you choose
+              </p>
+            </div>
           </div>
 
           {/* Category Filter */}
