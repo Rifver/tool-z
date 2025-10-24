@@ -8,7 +8,7 @@ import Layout from '@/components/Layout';
 const Portfolio = () => {
   const [activeCategory, setActiveCategory] = useState('All');
 
-  const categories = ['All', 'Promotional', 'Documentary/Interview', 'Comedy', 'Animation', 'Green Screen', 'Educational'];
+  const categories = ['All', 'Promotional', 'Documentary/Interview', 'Comedy', 'Animation', 'Graphic Design', 'Educational'];
 
   const projects = [
     {
@@ -53,13 +53,13 @@ const Portfolio = () => {
     },
     {
       id: 5,
-      title: 'Green Screen Productions',
-      category: 'Green Screen',
-      role: 'Technical Director & Editor',
-      year: '2023',
-      description: 'Various green screen projects with seamless background integration and color matching.',
-      thumbnail: 'https://i.postimg.cc/Y0BcMq8x/Screenshot-2025-07-31-051237.png',
-      tags: ['Green Screen', 'VFX', 'Compositing']
+      title: 'UI and Graphics Design',
+      category: 'Graphic Design',
+      role: 'Editor',
+      year: '2025',
+      description: 'Various UI and Graphic Design projects with modern and easy to read style',
+      thumbnail: 'https://imgur.com/IebNKkb',
+      tags: ['Graphic Design', 'UI Design']
     },
     {
       id: 6,
@@ -123,7 +123,7 @@ const Portfolio = () => {
                   <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                     <div className="flex space-x-3">
                       <Button size="sm" variant="secondary" asChild>
-                        <a href={project.id === 1 ? "https://drive.google.com/file/d/1zaBcCZ2TowwfJylotFHMyOZ719NDFsdn/view?usp=sharing" : project.id === 2 ? "https://drive.google.com/file/d/1RFepNuXkBcpjUxdWzgeQQnzkpLgqso5h/view?usp=sharing" : project.id === 3 ? "https://drive.google.com/file/d/1gr_LdZuMa9zcK7Vzut8vjO38jq6FkcnP/view?usp=sharing" : project.id === 4 ? "https://drive.google.com/file/d/1Gq7uChS7nSRIwQTFvhuHAD3sdDIZD1sW/view?usp=sharing" : project.id === 5 ? "https://drive.google.com/file/d/1vbA7o92qEXiM7m_1X9TKYeRBLRuLRlB5/view?usp=sharing" : project.id === 6 ? "https://drive.google.com/file/d/1wdNTp9D_KxjjZtRuOeYADZJ7ZvaXzVhL/view?usp=sharing" : "#"} target="_blank" rel="noopener noreferrer">
+                        <a href={project.id === 1 ? "https://drive.google.com/file/d/1zaBcCZ2TowwfJylotFHMyOZ719NDFsdn/view?usp=sharing" : project.id === 2 ? "https://drive.google.com/file/d/1RFepNuXkBcpjUxdWzgeQQnzkpLgqso5h/view?usp=sharing" : project.id === 3 ? "https://drive.google.com/file/d/1gr_LdZuMa9zcK7Vzut8vjO38jq6FkcnP/view?usp=sharing" : project.id === 4 ? "https://drive.google.com/file/d/1Gq7uChS7nSRIwQTFvhuHAD3sdDIZD1sW/view?usp=sharing" : project.id === 5 ? "https://drive.google.com/drive/folders/1s0wvUSjuH7GqO_RLNJz0Vjp4miUb0joA?usp=drive_link" : project.id === 6 ? "https://drive.google.com/file/d/1wdNTp9D_KxjjZtRuOeYADZJ7ZvaXzVhL/view?usp=sharing" : "#"} target="_blank" rel="noopener noreferrer">
                           <Play className="w-4 h-4 mr-2" />
                           Play
                         </a>
