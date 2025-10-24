@@ -58,7 +58,7 @@ const Portfolio = () => {
       role: 'Editor',
       year: '2025',
       description: 'Various UI and Graphic Design projects with modern and easy to read style',
-      thumbnail: 'https://i.postimg.cc/VkLT5ytv/Rifatulmadhan-Disgraf-Vitabumin-9-16.png',
+      thumbnail: 'https://i.postimg.cc/HkgMtH2F/Rifatulmadhan-Disgraf-Vitabumin-9-16.png',
       tags: ['Graphic Design', 'UI Design']
     },
     {
