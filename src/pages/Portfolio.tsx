@@ -18,7 +18,7 @@ const Portfolio = () => {
       role: 'Videographer & Editor',
       year: '2023',
       description: 'A comprehensive product promotion showcasing product values through dynamic storytelling and professional cinematography.',
-      thumbnail: 'https://i.postimg.cc/CMP6PbKG/Screenshot-2025-07-31-030328.png',
+      thumbnail: 'https://imgur.com/slHZvcA',
       tags: ['Premiere Pro', 'Capcut', 'Color Grading']
     },
     {
