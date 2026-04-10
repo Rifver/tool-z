@@ -8,7 +8,7 @@ import profilePhoto from '@/assets/profile-photo.png';
 
 const Index = () => {
   const stats = [
-    { icon: Award, label: 'Years Experience', value: '1+' },
+    { icon: Award, label: 'Years Experience', value: '3+' },
     { icon: Users, label: 'Projects Completed', value: '100+' },
     { icon: Play, label: 'Video Content', value: 'Various' },
   ];
