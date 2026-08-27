@@ -93,7 +93,7 @@ const Portfolio = () => {
             {/* Instructional Note */}
             <div className="flex items-center justify-center gap-2 mt-6 px-4 py-3 bg-secondary/30 border border-border rounded-lg max-w-2xl mx-auto">
               <Info className="w-4 h-4 text-primary flex-shrink-0" />
-              <p className="text-sm text-muted-foreground italic">
+              <p className="text-sm text-white italic">
                 <span className="font-semibold">*Note:</span> Please press the "Details" button to see more of my projects based on the category you choose
               </p>
             </div>
