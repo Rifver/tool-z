@@ -137,7 +137,7 @@ const Portfolio = () => {
                         </a>
                       </Button>
                       <Button size="sm" variant="outline" asChild>
-                        <a href={project.id === 1 ? "https://drive.google.com/drive/folders/16AwSrFkyuCnYOLUkGFBcleuDIuc9RLY4?usp=drive_link" : project.id === 2 ? "https://drive.google.com/drive/folders/178aVLPm5qZJ-mpxfp4dCe_dq72Y-xY8_?usp=drive_link" : project.id === 3 ? "https://drive.google.com/drive/folders/15PaatHHil10xu8aHub9G30NlWup91p2L?usp=drive_link" : project.id === 4 ? "https://drive.google.com/drive/folders/1fBQhmw0jX6X6oSSCbbS6KNzmDK8NqTUb?usp=drive_link" : project.id === 5 ? "https://drive.google.com/drive/folders/1XEAYIY1pXYishOuhavr99acNmjq3IiC_?usp=drive_link" : project.id === 6 ? "https://drive.google.com/drive/folders/1_MJJq0QINIHnbf392FfNxGXOjQO3ucl_?usp=drive_link" : "#"} target="_blank" rel="noopener noreferrer">
+                        <a href={project.id === 1 ? "https://drive.google.com/file/d/1bP-yfiFqscfEn_s5LLyvZwqS-EuNLVxQ/view?usp=drive_link" : project.id === 2 ? "https://drive.google.com/drive/folders/178aVLPm5qZJ-mpxfp4dCe_dq72Y-xY8_?usp=drive_link" : project.id === 3 ? "https://drive.google.com/drive/folders/15PaatHHil10xu8aHub9G30NlWup91p2L?usp=drive_link" : project.id === 4 ? "https://drive.google.com/drive/folders/1fBQhmw0jX6X6oSSCbbS6KNzmDK8NqTUb?usp=drive_link" : project.id === 5 ? "https://drive.google.com/drive/folders/1XEAYIY1pXYishOuhavr99acNmjq3IiC_?usp=drive_link" : project.id === 6 ? "https://drive.google.com/drive/folders/1_MJJq0QINIHnbf392FfNxGXOjQO3ucl_?usp=drive_link" : "#"} target="_blank" rel="noopener noreferrer">
                           <Eye className="w-4 h-4 mr-2" />
                           Details
                         </a>
